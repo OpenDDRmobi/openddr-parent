@@ -148,7 +148,7 @@
 		</pluginManagement>
 	</build>
 	
-		<!-- Additional repositories -->
+	<!-- Additional repositories -->
 	<!-- Helps to resolve Parent POM and Snapshot artifacts -->
 	<repositories>
 		<repository>
