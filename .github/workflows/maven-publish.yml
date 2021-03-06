@@ -28,3 +28,5 @@ jobs:
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
         GITHUB_TOKEN: ${{ github.token }}
+        SUPER_SECRET: ${{ CI_DEPLOY_USERNAME }}
+        MORE_SECRET: ${{ CI_DEPLOY_PASSWORD }}
