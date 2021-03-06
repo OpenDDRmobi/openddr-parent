@@ -32,4 +32,4 @@ jobs:
               "password": "${{ secrets.CI_DEPLOY_PASSWORD }}"
           }]
           
-    - run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+    - run: mvn deploy -s /home/runner/.m2/settings.xml
