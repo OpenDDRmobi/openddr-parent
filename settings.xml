@@ -2,8 +2,8 @@
     <servers>
         <server>
             <id>ossrh</id>
-            <username>${SUPER_SECRET}</username>
-            <password>${MORE_SECRET}</password>
+            <username>$env:SUPER_SECRET</username>
+            <password>$env:MORE_SECRET</password>
         </server>
     </servers>
 </settings>
