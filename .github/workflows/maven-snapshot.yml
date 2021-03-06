@@ -31,4 +31,5 @@ jobs:
               "username": "${{ secrets.CI_DEPLOY_USERNAME }}",
               "password": "${{ secrets.CI_DEPLOY_PASSWORD }}"
           }]
-      run: mvn -B package --file pom.xml
+          
+    - run: mvn -B package --file pom.xml
