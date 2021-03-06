@@ -32,4 +32,4 @@ jobs:
               "password": "${{ secrets.CI_DEPLOY_PASSWORD }}"
           }]
           
-    - run: mvn -B package --file pom.xml
+    - run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
