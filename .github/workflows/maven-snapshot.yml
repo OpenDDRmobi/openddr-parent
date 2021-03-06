@@ -24,7 +24,9 @@ jobs:
 
     - name: Publish to GitHub Packages Apache Maven
       # run: mvn deploy -s settings.xml
-      run: echo "$SUPER_SECRET"
+      # run: echo "$SUPER_SECRET"
+      if:  env.SUPER_SECRET == 'wkeil'
+        run: echo "I know what the secret token is!"
       env:
         GITHUB_TOKEN: ${{ github.token }}
         SUPER_SECRET: ${{ secrets.CI_DEPLOY_USERNAME }}
