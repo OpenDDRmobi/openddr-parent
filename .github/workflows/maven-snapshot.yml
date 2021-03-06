@@ -23,7 +23,8 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s settings.xml
+      # run: mvn deploy -s settings.xml
+      run: echo "$SUPER_SECRET"
       env:
         GITHUB_TOKEN: ${{ github.token }}
         SUPER_SECRET: ${{ secrets.CI_DEPLOY_USERNAME }}
