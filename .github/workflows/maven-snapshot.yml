@@ -16,6 +16,6 @@ jobs:
         servers: |
           [{
               "id": "sonatype-nexus-snapshots",
-              "username": "${{ secrets.SONATYPE_USERNAME }}",
-              "password": "${{ secrets.SONATYPE_PASSWORD }}"
+              "username": "${{ secrets.CI_DEPLOY_USERNAME }}",
+              "password": "${{ secrets.CI_DEPLOY_PASSWORD }}"
           }]
