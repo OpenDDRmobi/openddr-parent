@@ -12,7 +12,8 @@ jobs:
 
     steps:
     
-    - uses: s4u/maven-settings-action@v2.4.0
+    - name: maven-settings-action
+      uses: s4u/maven-settings-action@v2.4.0
       with:
       servers: |
         [{
